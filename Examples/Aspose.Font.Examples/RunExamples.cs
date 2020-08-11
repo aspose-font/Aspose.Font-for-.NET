@@ -1,5 +1,6 @@
 ﻿using Aspose.Font.Examples.WorkingWithCFFFonts;
 using Aspose.Font.Examples.WorkingWithTrueTypeAndOpenTypeFonts;
+using Aspose.Font.Examples.WorkingWithType1Fonts;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,16 +17,25 @@ namespace Aspose.Font.Examples
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
 
-            License lic = new License();
-            lic.SetLicense("J://Aspose.Total.Product.Family.lic");
+
+            // Set License
+            //License lic = new License();
+            //lic.SetLicense("C:\\Program Files (x86)\\Aspose\\Licenses\\Aspose.Font.NET.lic");
 
             #region Working wtih TTF Fonts
-            DetectLatinSymbolsSupport.Run();
-            ExtractLicenseRestrictions.Run();
-            GetFontMetrics.Run();
+            WorkingWithTrueTypeAndOpenTypeFonts.DetectLatinSymbolsSupport.Run();
+            WorkingWithTrueTypeAndOpenTypeFonts.ExtractLicenseRestrictions.Run();
+            WorkingWithTrueTypeAndOpenTypeFonts.GetFontMetrics.Run();
+            WorkingWithTrueTypeAndOpenTypeFonts.RenderingText.Run();
             LoadTrueTypeFonts.Run();
-            RenderingText.Run();
             SaveTTFToDisc.Run();
+            #endregion
+
+            #region Wroking Type1 Fonts
+            WorkingWithType1Fonts.DetectLatinSymbolsSupport.Run();
+            WorkingWithType1Fonts.GetFontMetrics.Run();
+            WorkingWithType1Fonts.RenderingText.Run();
+            LoadType1Fonts.Run();
             #endregion
 
             #region Wroking CFF Fonts

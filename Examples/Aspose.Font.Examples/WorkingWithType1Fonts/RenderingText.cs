@@ -2,7 +2,7 @@
 using Aspose.Font.Rendering;
 using Aspose.Font.RenderingPath;
 using Aspose.Font.Sources;
-using Aspose.Font.Ttf;
+using Aspose.Font.Type1;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -11,24 +11,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aspose.Font.Examples.WorkingWithTrueTypeAndOpenTypeFonts
+namespace Aspose.Font.Examples.WorkingWithType1Fonts
 {
     class RenderingText
     {
         public static void Run()
         {
             string dataDir = RunExamples.GetDataDir_Data();
+            //ExStart: 1
+            string fileName = dataDir + "courier.pfb"; //Font file name with full path
 
-            string fileName1 = dataDir + "Montserrat-Bold.ttf"; //Font file name with full path
-            FontDefinition fd1 = new FontDefinition(FontType.TTF, new FontFileDefinition("ttf", new FileSystemStreamSource(fileName1)));
-            TtfFont ttfFont1 = Aspose.Font.Font.Open(fd1) as TtfFont;
+            FontDefinition fd = new FontDefinition(FontType.Type1, new FontFileDefinition("pfb", new FileSystemStreamSource(fileName)));
+            Type1Font font = Aspose.Font.Font.Open(fd) as Type1Font;
             
-            string fileName2 = dataDir + "Lora-Bold.ttf"; //Font file name with full path
-            FontDefinition fd2 = new FontDefinition(FontType.TTF, new FontFileDefinition("ttf", new FileSystemStreamSource(fileName2)));
-            TtfFont ttfFont2 = Aspose.Font.Font.Open(fd2) as TtfFont;
 
-            DrawText("Hello world", ttfFont1, 14, Brushes.White, Brushes.Black, dataDir + "hello1_montserrat_out.jpg");
-            DrawText("Hello world", ttfFont2, 14, Brushes.Yellow, Brushes.Red, dataDir + "hello2_lora_out.jpg");
+            DrawText("Hello world", font, 14, Brushes.White, Brushes.Black, dataDir + "hello1_type1_out.jpg");
+            DrawText("Hello world", font, 14, Brushes.Yellow, Brushes.Red, dataDir + "hello2_type1_out.jpg");
         }
 
         class GlyphOutlinePainter : IGlyphOutlinePainter
@@ -82,7 +80,7 @@ namespace Aspose.Font.Examples.WorkingWithTrueTypeAndOpenTypeFonts
                 _path.CloseFigure();
             }
         }
-        
+
 
         static void DrawText(string text, IFont font, double fontSize,
                     Brush backgroundBrush, Brush textBrush, string outFile)

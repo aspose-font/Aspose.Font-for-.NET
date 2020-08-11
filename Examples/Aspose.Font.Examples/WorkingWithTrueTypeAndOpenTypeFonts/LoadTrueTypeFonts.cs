@@ -14,7 +14,7 @@ namespace Aspose.Font.Examples.WorkingWithTrueTypeAndOpenTypeFonts
         {
             string dataDir = RunExamples.GetDataDir_Data();
             //ExStart: 1
-            string fileName= dataDir+"YourSignature.ttf"; //Font file name with full path
+            string fileName= dataDir + "Montserrat-Regular.ttf"; //Font file name with full path
 
             FontDefinition fd = new FontDefinition(FontType.TTF, new FontFileDefinition("ttf", new FileSystemStreamSource(fileName)));
             TtfFont ttfFont = Aspose.Font.Font.Open(fd) as TtfFont;

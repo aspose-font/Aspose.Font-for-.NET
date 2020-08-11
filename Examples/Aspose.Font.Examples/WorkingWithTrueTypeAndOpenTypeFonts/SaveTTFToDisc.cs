@@ -17,7 +17,7 @@ namespace Aspose.Font.Examples.WorkingWithTrueTypeAndOpenTypeFonts
             //byte array to load Font from
             string dataDir = RunExamples.GetDataDir_Data();
             
-            byte[] fontMemoryData = File.ReadAllBytes(dataDir + "YourSignature.ttf");
+            byte[] fontMemoryData = File.ReadAllBytes(dataDir + "Montserrat-Regular.ttf");
             FontDefinition fd = new FontDefinition(FontType.TTF, new FontFileDefinition("ttf", new ByteContentStreamSource(fontMemoryData)));
             TtfFont ttfFont = Aspose.Font.Font.Open(fd) as TtfFont;
 
@@ -25,7 +25,7 @@ namespace Aspose.Font.Examples.WorkingWithTrueTypeAndOpenTypeFonts
 
             //Save CffFont to disk
             //Output Font file name with full path
-            string outputFile = RunExamples.GetDataDir_Data() + "YourSignature_out.cff";
+            string outputFile = RunExamples.GetDataDir_Data() + "Montserrat-Regular_out.ttf";
 
             ttfFont.Save(outputFile);
             //ExEnd: 1

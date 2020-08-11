@@ -33,9 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Font, Version=20.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Font, Version=20.9.0.0, Culture=neutral, PublicKeyToken=f0262d67fe233d63, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Program Files (x86)\Aspose\Aspose.Font for .NET\Bin\net2.0\Aspose.Font.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Aspose\Aspose.Font for .NET\Bin\net4.0\Aspose.Font.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,12 +58,14 @@
     <Compile Include="WorkingWithTrueTypeAndOpenTypeFonts\LoadTrueTypeFonts.cs" />
     <Compile Include="WorkingWithTrueTypeAndOpenTypeFonts\RenderingText.cs" />
     <Compile Include="WorkingWithTrueTypeAndOpenTypeFonts\SaveTTFToDisc.cs" />
+    <Compile Include="WorkingWithType1Fonts\DetectLatinSymbolsSupport.cs" />
+    <Compile Include="WorkingWithType1Fonts\GetFontMetrics.cs" />
+    <Compile Include="WorkingWithType1Fonts\LoadType1Fonts.cs" />
+    <Compile Include="WorkingWithType1Fonts\RenderingText.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="WorkingWithType1Fonts\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
