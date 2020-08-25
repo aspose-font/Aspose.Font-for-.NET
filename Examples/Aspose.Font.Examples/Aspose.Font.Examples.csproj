@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Licensing\AddLicenseFromFile.cs" />
+    <Compile Include="Licensing\AddLicenseFromStream.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WorkingWithCFFFonts\LoadCFFFont.cs" />

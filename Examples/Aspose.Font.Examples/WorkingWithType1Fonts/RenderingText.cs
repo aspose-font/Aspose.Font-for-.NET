@@ -32,8 +32,7 @@ namespace Aspose.Font.Examples.WorkingWithType1Fonts
 
         //ExStart: 2
         class GlyphOutlinePainter : IGlyphOutlinePainter
-        {
-            //ExStart: 1
+        { 
             private System.Drawing.Drawing2D.GraphicsPath _path;
             private System.Drawing.PointF _currentPoint;
 
@@ -82,8 +81,9 @@ namespace Aspose.Font.Examples.WorkingWithType1Fonts
                 _path.CloseFigure();
             }
         }
+        //ExEnd: 2
 
-
+        //ExStart: 3
         static void DrawText(string text, IFont font, double fontSize,
                     Brush backgroundBrush, Brush textBrush, string outFile)
         {
@@ -166,12 +166,14 @@ namespace Aspose.Font.Examples.WorkingWithType1Fonts
             //Save results
             outBitmap.Save(outFile);
         }
+        //ExEnd: 3
 
+        //ExStart: 4
         static double FontWidthToImageWith(double width, int fontSourceResulution, double fontSize, double dpi = 300)
         {
             double resolutionCorrection = dpi / 72; // 72 is font's internal dpi
             return (width / fontSourceResulution) * fontSize * resolutionCorrection;
         }
-        //ExEnd: 2
+        //ExEnd: 4
     }
 }
