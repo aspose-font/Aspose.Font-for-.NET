@@ -17,4 +17,4 @@ Directory | Description
 
 # Font File Manipulation .NET API
 
-[Product Page](https://products.aspose.com/Font/net) | [Docs](https://docs.aspose.com/display/Fontnet/Home) | [Demos](https://products.aspose.app/Font/family) | [API Reference](https://apireference.aspose.com/Font/net) | [Examples](https://github.com/aspose-Font/Aspose.Font-for-.NET) | [Blog](https://blog.aspose.com/category/Font/) | [Free Support](https://forum.aspose.com/c/Font) |  [Temporary License](https://purchase.aspose.com/temporary-license)
+[Product Page](https://products.aspose.com/Font/net) | [Docs](https://docs.aspose.com/display/Fontnet/Home) | `[API Reference](https://apireference.aspose.com/Font/net) | [Examples](https://github.com/aspose-Font/Aspose.Font-for-.NET) | [Blog](https://blog.aspose.com/category/Font/) | [Free Support](https://forum.aspose.com/c/Font) |  [Temporary License](https://purchase.aspose.com/temporary-license)

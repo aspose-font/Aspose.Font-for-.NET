@@ -17,6 +17,7 @@ namespace Aspose.Font.Examples.WorkingWithTrueTypeAndOpenTypeFonts
     {
         public static void Run()
         {
+            //ExStart: 2
             string dataDir = RunExamples.GetDataDir_Data();
 
             string fileName1 = dataDir + "Montserrat-Bold.ttf"; //Font file name with full path
@@ -29,11 +30,12 @@ namespace Aspose.Font.Examples.WorkingWithTrueTypeAndOpenTypeFonts
 
             DrawText("Hello world", ttfFont1, 14, Brushes.White, Brushes.Black, dataDir + "hello1_montserrat_out.jpg");
             DrawText("Hello world", ttfFont2, 14, Brushes.Yellow, Brushes.Red, dataDir + "hello2_lora_out.jpg");
+            //ExEnd: 2
         }
 
+        //ExStart: 1
         class GlyphOutlinePainter : IGlyphOutlinePainter
         {
-            //ExStart: 1
             private System.Drawing.Drawing2D.GraphicsPath _path;
             private System.Drawing.PointF _currentPoint;
 
@@ -172,5 +174,6 @@ namespace Aspose.Font.Examples.WorkingWithTrueTypeAndOpenTypeFonts
             double resolutionCorrection = dpi / 72; // 72 is font's internal dpi
             return (width / fontSourceResulution) * fontSize * resolutionCorrection;
         }
+        //ExEnd: 1
     }
 }

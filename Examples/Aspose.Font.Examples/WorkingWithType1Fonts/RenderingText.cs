@@ -27,8 +27,10 @@ namespace Aspose.Font.Examples.WorkingWithType1Fonts
 
             DrawText("Hello world", font, 14, Brushes.White, Brushes.Black, dataDir + "hello1_type1_out.jpg");
             DrawText("Hello world", font, 14, Brushes.Yellow, Brushes.Red, dataDir + "hello2_type1_out.jpg");
+            //ExEnd: 1
         }
 
+        //ExStart: 2
         class GlyphOutlinePainter : IGlyphOutlinePainter
         {
             //ExStart: 1
@@ -170,5 +172,6 @@ namespace Aspose.Font.Examples.WorkingWithType1Fonts
             double resolutionCorrection = dpi / 72; // 72 is font's internal dpi
             return (width / fontSourceResulution) * fontSize * resolutionCorrection;
         }
+        //ExEnd: 2
     }
 }
