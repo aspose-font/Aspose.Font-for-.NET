@@ -68,4 +68,4 @@ else{
 }
 ```
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/font/net) | [Docs](https://docs.aspose.com/font/net/) | [API Reference](https://apireference.aspose.com/font/net) | [Examples](https://github.com/aspose-font/Aspose.Font-for-.NET/tree/master/Examples) | [Blog](https://blog.aspose.com/category/font/) | [Free Support](https://forum.aspose.com/c/font) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/font/net) | [Docs](https://docs.aspose.com/font/net/) | [API Reference](https://apireference.aspose.com/font/net) | [Examples](https://github.com/aspose-font/Aspose.Font-for-.NET/tree/master/Examples) | [Blog](https://blog.aspose.com/category/font/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/font) | [Temporary License](https://purchase.aspose.com/temporary-license)
